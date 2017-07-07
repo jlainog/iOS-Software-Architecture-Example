@@ -20,18 +20,3 @@ protocol ListMovies {
                     page: Int,
                     completionHandler: MovieListHandler)
 }
-
-struct ListMoviesImpl : ListMovies {
-    func listMovies(listType: MovieListType,
-                    page: Int,
-                    completionHandler: MovieListHandler) {
-        let totalPage = 2
-        
-        if page > totalPage {
-            completionHandler([Movie](), "You Reach final page")
-            return
-        }
-        
-        completionHandler([Movie](), nil)
-    }
-}

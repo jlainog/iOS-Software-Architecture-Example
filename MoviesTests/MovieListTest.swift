@@ -22,12 +22,15 @@ class MovieListTest: XCTestCase {
     }
     
     func testListMovies() {
-        let service : ListMovies = ListMoviesImpl()
+        let service : ListMovies = MockListMoviesImpl()
         let waitingForService = expectation(description: "listMoviesExpectation")
         
         service.listMovies(listType: .inTheathersNow, page: 1) { (list, errorMessage) in
             guard let message = errorMessage else {
                 waitingForService.fulfill()
+                
+                XCTAssert(MockListMoviesImpl.movies.first?.id == list.first?.id)
+                XCTAssert(MockListMoviesImpl.movies.first?.title == list.first?.title)
                 return
             }
 

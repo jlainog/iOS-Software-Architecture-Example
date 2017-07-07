@@ -9,6 +9,7 @@
 import UIKit
 
 protocol Movie {
+    var id : String { get }
     var title : String { get }
     var gendres : [Gendre] { get }
     var summary : String { get }
@@ -17,6 +18,7 @@ protocol Movie {
 }
 
 struct MovieData : Movie {
+    let id: String
     let title: String
     let releaseDate: Date
     let summary: String
