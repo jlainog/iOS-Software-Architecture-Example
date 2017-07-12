@@ -9,27 +9,23 @@
 import UIKit
 
 class MVCListMoviesViewController: ListMoviesTableViewController {
-    fileprivate var movies = [Movie]()
-    fileprivate var listType : MovieListType = .inTheathersNow {
-        didSet {
-            self.configureTitle()
-        }
-    }
+    fileprivate let controller = ListMoviesController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        listMovies()
+        controller.delegate = self
+        controller.listMovies()
     }
 }
 
 extension MVCListMoviesViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
+        return controller.movies.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ListMoviesTableViewCell
-        let movie = movies[indexPath.row]
+        let movie = controller.movies[indexPath.row]
         
         cell.titleLabel?.text = "MVC: " + movie.title
         cell.gendreLabel.text = movie.gendres.reduce("") { $0.0 + $0.1.name }
@@ -37,20 +33,9 @@ extension MVCListMoviesViewController {
     }
 }
 
-private extension MVCListMoviesViewController {
-    func listMovies() {
-        let service : ListMovies = MockListMoviesImpl()
-        
-        configureTitle()
-        service.listMovies(listType: listType,
-                           page: 0)
-        { [weak self] (movies, error) in
-            self?.update(movies: movies, error: error)
-        }
-    }
-    
+extension MVCListMoviesViewController : ListMoviesControllerDelegate {
     func update(movies: [Movie], error: String?) {
-        self.movies = movies
+        tableView.reloadData()
         
         guard let message = error else { return }
         
@@ -62,11 +47,6 @@ private extension MVCListMoviesViewController {
     }
     
     func configureTitle() {
-        switch listType {
-        case .inTheathersNow:
-            title = "Movies in Theathers"
-        case .upcoming:
-            title = "Upcomming Movies"
-        }
+        title = controller.title
     }
 }
