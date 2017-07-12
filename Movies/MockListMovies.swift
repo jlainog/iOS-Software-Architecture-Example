@@ -15,6 +15,13 @@ struct MockListMoviesImpl : ListMovies {
         var list = [Movie]()
         
         for i in 0..<10 {
+            let url = { () -> URL? in 
+                if i == 0 {
+                    return URL(string: "https://image.tmdb.org/t/p/w640/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg")
+                }
+                
+                return URL(string: "mockURL\(i).com")
+            }()
             let gendre = GendreData(id: "\(i)",
                 name: "Mock \(i)")
             let movie = MovieData(id: "\(i)",
@@ -22,7 +29,7 @@ struct MockListMoviesImpl : ListMovies {
                 releaseDate: Date(),
                 summary: "Mock Summary \(1)",
                 gendres: [gendre],
-                posterImageURL: URL(string: "mockURL\(i).com")!)
+                posterImageURL: url!)
             
             list.append(movie)
         }
