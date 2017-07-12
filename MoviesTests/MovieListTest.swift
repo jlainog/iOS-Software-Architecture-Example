@@ -57,4 +57,21 @@ class MovieListTest: XCTestCase {
         XCTAssertTrue(mockView.showErrorCalled)
     }
 
+    func testMVPListMoviePresenter_ListTypeChange() {
+        let service : ListMovies = MockListMoviesImpl(testSuccess: true)
+        let mockView = MockListMoviesView()
+        let presenter = ListMoviesPresenter(view: mockView, service: service)
+        
+        presenter.listType = .inTheathersNow
+        XCTAssertTrue(mockView.setTitleCalled)
+        XCTAssertEqual(mockView.title, "Movies in Theathers")
+
+        presenter.listType = .upcoming
+        XCTAssertTrue(mockView.setTitleCalled)
+        XCTAssertEqual(mockView.title, "Upcomming Movies")
+        
+        XCTAssertTrue(mockView.didStartRequestCalled)
+        XCTAssertTrue(mockView.didFinishRequestCalled)
+        XCTAssertTrue(mockView.updateMoviesCalled)
+    }
 }
