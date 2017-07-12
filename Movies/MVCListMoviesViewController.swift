@@ -47,9 +47,6 @@ private extension MVCListMoviesViewController {
         { [weak self] (movies, error) in
             self?.update(movies: movies, error: error)
         }
-        service.listMovies(listType: listType,
-                           page: 0,
-                           completionHandler: update(movies:error:))
     }
     
     func update(movies: [Movie], error: String?) {
