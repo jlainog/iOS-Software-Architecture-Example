@@ -11,6 +11,9 @@
 		2BBEAF24100D6ECDF9133C8C /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3728495A587CAC7EA60C8F49 /* Pods_Movies.framework */; };
 		2DCA257B0735CFC78D20793F /* Pods_MoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBBFD635BB381B6327C696D /* Pods_MoviesUITests.framework */; };
 		F501DDC81F16658D007B6DAB /* MockListMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDC71F16658D007B6DAB /* MockListMovieView.swift */; };
+		F501DDCB1F166C6B007B6DAB /* ListMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDCA1F166C6B007B6DAB /* ListMoviesViewModel.swift */; };
+		F501DDCD1F16724D007B6DAB /* MVVMListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDCC1F16724D007B6DAB /* MVVMListMoviesViewController.swift */; };
+		F501DDCF1F16865F007B6DAB /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDCE1F16865F007B6DAB /* MovieCellViewModel.swift */; };
 		F505F6131F1026F900DCBBD1 /* MovieListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6121F1026F900DCBBD1 /* MovieListTest.swift */; };
 		F505F6171F10336D00DCBBD1 /* MockListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6161F10336D00DCBBD1 /* MockListMovies.swift */; };
 		F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */; };
@@ -58,6 +61,9 @@
 		B2EA81CD5D0B3E6D01C462CD /* Pods-MoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesUITests/Pods-MoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F31D7A54334DA7FE0EF8D45E /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
 		F501DDC71F16658D007B6DAB /* MockListMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMovieView.swift; sourceTree = "<group>"; };
+		F501DDCA1F166C6B007B6DAB /* ListMoviesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesViewModel.swift; sourceTree = "<group>"; };
+		F501DDCC1F16724D007B6DAB /* MVVMListMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMListMoviesViewController.swift; sourceTree = "<group>"; };
+		F501DDCE1F16865F007B6DAB /* MovieCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
 		F505F6121F1026F900DCBBD1 /* MovieListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTest.swift; sourceTree = "<group>"; };
 		F505F6161F10336D00DCBBD1 /* MockListMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMovies.swift; sourceTree = "<group>"; };
 		F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +188,9 @@
 		F505F61E1F10393300DCBBD1 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F501DDCA1F166C6B007B6DAB /* ListMoviesViewModel.swift */,
+				F501DDCE1F16865F007B6DAB /* MovieCellViewModel.swift */,
+				F501DDCC1F16724D007B6DAB /* MVVMListMoviesViewController.swift */,
 			);
 			name = MVVM;
 			sourceTree = "<group>";
@@ -562,10 +571,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F501DDCB1F166C6B007B6DAB /* ListMoviesViewModel.swift in Sources */,
 				F505F6201F1039CB00DCBBD1 /* MVPListMoviesViewController.swift in Sources */,
 				F505F6241F1044D500DCBBD1 /* ListMoviesTableViewCell.swift in Sources */,
 				F5FB7E741F085DFB0095095A /* ListMovies.swift in Sources */,
 				F501DDC81F16658D007B6DAB /* MockListMovieView.swift in Sources */,
+				F501DDCD1F16724D007B6DAB /* MVVMListMoviesViewController.swift in Sources */,
 				F5FB7E6B1F0841300095095A /* Gendre.swift in Sources */,
 				F5FB7E3B1F083DD10095095A /* ViewController.swift in Sources */,
 				F5FB7E411F083DD10095095A /* Movies.xcdatamodeld in Sources */,
@@ -573,6 +584,7 @@
 				F5FB7E701F085A9F0095095A /* Movie.swift in Sources */,
 				F505F6171F10336D00DCBBD1 /* MockListMovies.swift in Sources */,
 				F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */,
+				F501DDCF1F16865F007B6DAB /* MovieCellViewModel.swift in Sources */,
 				F505F6221F103B2700DCBBD1 /* ListMoviesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
