@@ -10,16 +10,7 @@ import XCTest
 @testable import Movies
 
 class MovieListTest: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    var listMoviesPresenter : ListMoviesPresenter!
     
     func testListMovies() {
         let service : ListMovies = MockListMoviesImpl()
@@ -33,10 +24,37 @@ class MovieListTest: XCTestCase {
                 XCTAssert(MockListMoviesImpl.movies.first?.title == list.first?.title)
                 return
             }
-
+            
             XCTFail("### Fail: \(message) ###")
         }
         waitForExpectations(timeout: 5, handler: nil)
     }
     
+    //MARK: Presenter Test
+    func testMVPListMoviePresenter_Success() {
+        let service : ListMovies = MockListMoviesImpl(testSuccess: true)
+        let mockView = MockListMoviesView()
+        let presenter = ListMoviesPresenter(view: mockView, service: service)
+        
+        presenter.listMovies()
+        XCTAssertTrue(mockView.didStartRequestCalled)
+        XCTAssertTrue(mockView.didFinishRequestCalled)
+        XCTAssertTrue(mockView.updateMoviesCalled)
+        XCTAssertTrue(mockView.setTitleCalled)
+        XCTAssertFalse(mockView.showErrorCalled)
+    }
+    
+    func testMVPListMoviePresenter_Error() {
+        let service : ListMovies = MockListMoviesImpl(testSuccess: false)
+        let mockView = MockListMoviesView()
+        let presenter = ListMoviesPresenter(view: mockView, service: service)
+        
+        presenter.listMovies()
+        XCTAssertTrue(mockView.didStartRequestCalled)
+        XCTAssertTrue(mockView.didFinishRequestCalled)
+        XCTAssertFalse(mockView.updateMoviesCalled)
+        XCTAssertTrue(mockView.setTitleCalled)
+        XCTAssertTrue(mockView.showErrorCalled)
+    }
+
 }

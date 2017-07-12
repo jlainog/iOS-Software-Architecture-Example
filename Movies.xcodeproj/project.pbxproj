@@ -10,6 +10,7 @@
 		05262E3E2036D9A4EAB35DDB /* Pods_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF2E25723AF24E0F1F5373 /* Pods_MoviesTests.framework */; };
 		2BBEAF24100D6ECDF9133C8C /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3728495A587CAC7EA60C8F49 /* Pods_Movies.framework */; };
 		2DCA257B0735CFC78D20793F /* Pods_MoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBBFD635BB381B6327C696D /* Pods_MoviesUITests.framework */; };
+		F501DDC81F16658D007B6DAB /* MockListMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDC71F16658D007B6DAB /* MockListMovieView.swift */; };
 		F505F6131F1026F900DCBBD1 /* MovieListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6121F1026F900DCBBD1 /* MovieListTest.swift */; };
 		F505F6171F10336D00DCBBD1 /* MockListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6161F10336D00DCBBD1 /* MockListMovies.swift */; };
 		F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */; };
@@ -56,6 +57,7 @@
 		8615AD52896DE20498233E4B /* Pods-MoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesTests/Pods-MoviesTests.release.xcconfig"; sourceTree = "<group>"; };
 		B2EA81CD5D0B3E6D01C462CD /* Pods-MoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesUITests/Pods-MoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F31D7A54334DA7FE0EF8D45E /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
+		F501DDC71F16658D007B6DAB /* MockListMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMovieView.swift; sourceTree = "<group>"; };
 		F505F6121F1026F900DCBBD1 /* MovieListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTest.swift; sourceTree = "<group>"; };
 		F505F6161F10336D00DCBBD1 /* MockListMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMovies.swift; sourceTree = "<group>"; };
 		F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F501DDC91F166593007B6DAB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F501DDC71F16658D007B6DAB /* MockListMovieView.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
 		F505F6151F10334100DCBBD1 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 		F505F61D1F10390F00DCBBD1 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				F501DDC91F166593007B6DAB /* Mocks */,
 				F505F61F1F1039CB00DCBBD1 /* MVPListMoviesViewController.swift */,
 				F505F6211F103B2700DCBBD1 /* ListMoviesPresenter.swift */,
 			);
@@ -554,6 +565,7 @@
 				F505F6201F1039CB00DCBBD1 /* MVPListMoviesViewController.swift in Sources */,
 				F505F6241F1044D500DCBBD1 /* ListMoviesTableViewCell.swift in Sources */,
 				F5FB7E741F085DFB0095095A /* ListMovies.swift in Sources */,
+				F501DDC81F16658D007B6DAB /* MockListMovieView.swift in Sources */,
 				F5FB7E6B1F0841300095095A /* Gendre.swift in Sources */,
 				F5FB7E3B1F083DD10095095A /* ViewController.swift in Sources */,
 				F5FB7E411F083DD10095095A /* Movies.xcdatamodeld in Sources */,

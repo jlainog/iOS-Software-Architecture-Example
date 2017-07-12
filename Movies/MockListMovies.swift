@@ -9,6 +9,7 @@
 import UIKit
 
 struct MockListMoviesImpl : ListMovies {
+    var testSucces : Bool
     
     static let movies : [Movie] = {
         var list = [Movie]()
@@ -29,9 +30,18 @@ struct MockListMoviesImpl : ListMovies {
         return list
     }()
     
+    init(testSuccess: Bool = true) {
+        self.testSucces = testSuccess
+    }
+    
     func listMovies(listType: MovieListType,
                     page: Int,
                     completionHandler: MovieListHandler) {
+        if !testSucces {
+            completionHandler([Movie](), "Error, try again later")
+            return
+        }
+        
         let totalPage = 2
         
         if page > totalPage {
