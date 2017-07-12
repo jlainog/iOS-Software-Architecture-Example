@@ -9,7 +9,7 @@
 import UIKit
 
 class MVCListMoviesViewController: ListMoviesTableViewController {
-    fileprivate let controller = ListMoviesController()
+    fileprivate let controller = ListMoviesController(service: MockListMoviesImpl())
     
     override func viewDidLoad() {
         super.viewDidLoad()

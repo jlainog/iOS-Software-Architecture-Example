@@ -14,7 +14,17 @@ protocol ListMoviesControllerDelegate {
 }
 
 final class ListMoviesController {
-    var delegate : ListMoviesControllerDelegate? = nil
+    fileprivate let service : ListMovies
+    
+    var listType : MovieListType = .inTheathersNow {
+        didSet {
+            listMovies()
+            delegate?.configureTitle()
+        }
+    }
+    var delegate : ListMoviesControllerDelegate? = nil {
+        didSet { delegate?.configureTitle() }
+    }
     var movies = [Movie]()
     var title :String {
         switch listType {
@@ -24,16 +34,12 @@ final class ListMoviesController {
             return "Upcomming Movies"
         }
     }
-    fileprivate var listType : MovieListType = .inTheathersNow {
-        didSet {
-            listMovies()
-            delegate?.configureTitle()
-        }
+
+    init(service: ListMovies) {
+        self.service = service
     }
     
     func listMovies() {
-        let service : ListMovies = MockListMoviesImpl()
-        
         service.listMovies(listType: listType,
                            page: 0)
         { [weak self] (movies, error) in
