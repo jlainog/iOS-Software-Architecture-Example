@@ -14,6 +14,7 @@
 		F501DDCB1F166C6B007B6DAB /* ListMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDCA1F166C6B007B6DAB /* ListMoviesViewModel.swift */; };
 		F501DDCD1F16724D007B6DAB /* MVVMListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDCC1F16724D007B6DAB /* MVVMListMoviesViewController.swift */; };
 		F501DDCF1F16865F007B6DAB /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDCE1F16865F007B6DAB /* MovieCellViewModel.swift */; };
+		F501DDD11F16CFE5007B6DAB /* MVCListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDD01F16CFE5007B6DAB /* MVCListMoviesViewController.swift */; };
 		F505F6131F1026F900DCBBD1 /* MovieListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6121F1026F900DCBBD1 /* MovieListTest.swift */; };
 		F505F6171F10336D00DCBBD1 /* MockListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6161F10336D00DCBBD1 /* MockListMovies.swift */; };
 		F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */; };
@@ -64,6 +65,7 @@
 		F501DDCA1F166C6B007B6DAB /* ListMoviesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesViewModel.swift; sourceTree = "<group>"; };
 		F501DDCC1F16724D007B6DAB /* MVVMListMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMListMoviesViewController.swift; sourceTree = "<group>"; };
 		F501DDCE1F16865F007B6DAB /* MovieCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
+		F501DDD01F16CFE5007B6DAB /* MVCListMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCListMoviesViewController.swift; sourceTree = "<group>"; };
 		F505F6121F1026F900DCBBD1 /* MovieListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTest.swift; sourceTree = "<group>"; };
 		F505F6161F10336D00DCBBD1 /* MockListMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMovies.swift; sourceTree = "<group>"; };
 		F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		F505F61C1F10390500DCBBD1 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				F501DDD01F16CFE5007B6DAB /* MVCListMoviesViewController.swift */,
 			);
 			name = MVC;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F501DDD11F16CFE5007B6DAB /* MVCListMoviesViewController.swift in Sources */,
 				F501DDCB1F166C6B007B6DAB /* ListMoviesViewModel.swift in Sources */,
 				F505F6201F1039CB00DCBBD1 /* MVPListMoviesViewController.swift in Sources */,
 				F505F6241F1044D500DCBBD1 /* ListMoviesTableViewCell.swift in Sources */,
