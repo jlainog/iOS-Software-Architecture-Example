@@ -24,8 +24,8 @@ fileprivate extension UIImage {
 
 final class MovieCellViewModel {
     fileprivate var imageURL : URL? = nil
-    fileprivate lazy var placeholder: UIImage? = UIImage(UIColor.blue)
-    fileprivate lazy var errorImagePlaceholder: UIImage? = UIImage(UIColor.red)
+    internal lazy var placeholder: UIImage? = UIImage(UIColor.blue)
+    internal lazy var errorImagePlaceholder: UIImage? = UIImage(UIColor.red)
     fileprivate let movieGendres : [Gendre]
     fileprivate let date : Date
     
