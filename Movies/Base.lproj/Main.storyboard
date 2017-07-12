@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bcn-QN-kAM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bcn-QN-kAM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,8 +22,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="3e2-iQ-NRc" kind="relationship" relationship="viewControllers" id="2Mn-d3-7cy"/>
-                        <segue destination="dPa-Vn-cqt" kind="relationship" relationship="viewControllers" id="RF5-6R-koP"/>
-                        <segue destination="11u-yY-mC0" kind="relationship" relationship="viewControllers" id="ywY-5f-AVN"/>
+                        <segue destination="8E6-2Y-b7A" kind="relationship" relationship="viewControllers" id="RF5-6R-koP"/>
+                        <segue destination="ALW-pC-wu8" kind="relationship" relationship="viewControllers" id="ywY-5f-AVN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="372-9z-DJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-372" y="965"/>
         </scene>
-        <!--Item-->
+        <!--List Movies View Controller-->
         <scene sceneID="iIQ-Ya-b0v">
             <objects>
-                <tableViewController id="dPa-Vn-cqt" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MVVMListMoviesViewController" id="dPa-Vn-cqt" customClass="MVVMListMoviesViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" id="VQy-Qg-3eE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nc6-Et-XP3">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nc6-Et-XP3">
                                             <rect key="frame" x="15" y="10" width="90" height="135"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="eN7-2X-hkb"/>
@@ -171,17 +171,17 @@
                             <outlet property="delegate" destination="dPa-Vn-cqt" id="hRS-Yc-7Tv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="CcV-Ho-yv2"/>
+                    <navigationItem key="navigationItem" id="MK1-Lh-Fa5"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8N-ox-3aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="276.61169415292358"/>
+            <point key="canvasLocation" x="564" y="965"/>
         </scene>
-        <!--Item-->
+        <!--List Movies View Controller-->
         <scene sceneID="kEU-rg-bq5">
             <objects>
-                <tableViewController id="11u-yY-mC0" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MVCListMoviesViewController" id="11u-yY-mC0" customClass="MVCListMoviesViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y7c-SN-DYk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
                                                 <constraint firstAttribute="width" secondItem="TVc-hf-pEN" secondAttribute="height" multiplier="2:3" id="x0V-F4-aCg"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aba-A8-D93">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aba-A8-D93">
                                             <rect key="frame" x="113" y="10" width="246" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="Qmw-JB-yvP"/>
@@ -257,12 +257,12 @@
                             <outlet property="delegate" destination="11u-yY-mC0" id="QWh-f3-EVo"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="2fZ-Cz-8OH"/>
+                    <navigationItem key="navigationItem" id="UMf-Yc-Gyu"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qb-n8-ND1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936.8" y="282.90854572713647"/>
+            <point key="canvasLocation" x="1262" y="965"/>
         </scene>
         <!--MVP-->
         <scene sceneID="QaH-PI-GU3">
@@ -282,6 +282,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44L-7R-HeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-372" y="276.61169415292358"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ZOG-We-WDT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8E6-2Y-b7A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" badgeValue="MVVM" id="CcV-Ho-yv2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nmW-qQ-Feu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dPa-Vn-cqt" kind="relationship" relationship="rootViewController" id="I2W-iz-Jnv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3C-9I-qiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="277"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="NTO-h7-C8a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ALW-pC-wu8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" badgeValue="MVC" id="2fZ-Cz-8OH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Oh-ki-mxR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="11u-yY-mC0" kind="relationship" relationship="rootViewController" id="38j-BF-aIn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Az4-C0-edu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="277"/>
         </scene>
     </scenes>
 </document>
