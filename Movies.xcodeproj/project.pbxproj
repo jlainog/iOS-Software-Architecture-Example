@@ -24,6 +24,9 @@
 		F501DDE21F17D730007B6DAB /* MovieWebServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDE11F17D730007B6DAB /* MovieWebServiceResponse.swift */; };
 		F501DDE61F17DF8B007B6DAB /* MovieManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDE51F17DF8B007B6DAB /* MovieManagedObject.swift */; };
 		F501DDE91F17EE04007B6DAB /* ListMovieFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDE81F17EE04007B6DAB /* ListMovieFactory.swift */; };
+		F501DDEB1F18055A007B6DAB /* ListMoviePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDEA1F18055A007B6DAB /* ListMoviePresenterTest.swift */; };
+		F501DDED1F180588007B6DAB /* ListMovieViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDEC1F180588007B6DAB /* ListMovieViewModelTest.swift */; };
+		F501DDEF1F1805E3007B6DAB /* ListMoviesControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDEE1F1805E3007B6DAB /* ListMoviesControllerTest.swift */; };
 		F505F6131F1026F900DCBBD1 /* MovieListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6121F1026F900DCBBD1 /* MovieListTest.swift */; };
 		F505F6171F10336D00DCBBD1 /* MockListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6161F10336D00DCBBD1 /* MockListMovies.swift */; };
 		F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */; };
@@ -84,6 +87,9 @@
 		F501DDE11F17D730007B6DAB /* MovieWebServiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieWebServiceResponse.swift; sourceTree = "<group>"; };
 		F501DDE51F17DF8B007B6DAB /* MovieManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManagedObject.swift; sourceTree = "<group>"; };
 		F501DDE81F17EE04007B6DAB /* ListMovieFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieFactory.swift; sourceTree = "<group>"; };
+		F501DDEA1F18055A007B6DAB /* ListMoviePresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviePresenterTest.swift; sourceTree = "<group>"; };
+		F501DDEC1F180588007B6DAB /* ListMovieViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieViewModelTest.swift; sourceTree = "<group>"; };
+		F501DDEE1F1805E3007B6DAB /* ListMoviesControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesControllerTest.swift; sourceTree = "<group>"; };
 		F505F6121F1026F900DCBBD1 /* MovieListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTest.swift; sourceTree = "<group>"; };
 		F505F6161F10336D00DCBBD1 /* MockListMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMovies.swift; sourceTree = "<group>"; };
 		F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +370,9 @@
 			isa = PBXGroup;
 			children = (
 				F505F6121F1026F900DCBBD1 /* MovieListTest.swift */,
+				F501DDEE1F1805E3007B6DAB /* ListMoviesControllerTest.swift */,
+				F501DDEC1F180588007B6DAB /* ListMovieViewModelTest.swift */,
+				F501DDEA1F18055A007B6DAB /* ListMoviePresenterTest.swift */,
 			);
 			name = "Movies List";
 			sourceTree = "<group>";
@@ -684,6 +693,9 @@
 				F5FB7E6E1F0843B90095095A /* GendreTest.swift in Sources */,
 				F505F6131F1026F900DCBBD1 /* MovieListTest.swift in Sources */,
 				F5FB7E511F083DD10095095A /* MoviesTests.swift in Sources */,
+				F501DDED1F180588007B6DAB /* ListMovieViewModelTest.swift in Sources */,
+				F501DDEF1F1805E3007B6DAB /* ListMoviesControllerTest.swift in Sources */,
+				F501DDEB1F18055A007B6DAB /* ListMoviePresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
