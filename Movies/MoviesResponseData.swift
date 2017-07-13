@@ -8,14 +8,7 @@
 
 import Foundation
 
-protocol MovieResponseData : Parseable {
-    var page : Int { get }
-    var results : [MovieWebData] { get }
-    var totalResults : Int { get }
-    var totalPages : Int { get }
-}
-
-struct MovieResponse : MovieResponseData {
+struct MovieResponse : Parseable {
     let page : Int
     let results : [MovieWebData]
     let totalResults : Int

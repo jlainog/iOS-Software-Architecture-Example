@@ -8,11 +8,14 @@
 
 import Foundation
 import CoreData
+import MagicalRecord
 
 class ListMovieDataBase : ListMovies {
     
     static func preloadDatabase() {
         var movies = [Movie]()
+        
+        MagicalRecord.setupCoreDataStack()
         
         for i in 0..<10 {
             let timeInterval = TimeInterval(1499894044 + (30 * i))
@@ -23,29 +26,36 @@ class ListMovieDataBase : ListMovies {
             )
         }
         
-//        MagicalRecord.save({ (ctx) in
-//            for m in movies {
-//                let entity = MovieManagedObject.mr_createEntity(in: ctx)
-//                
-//                entity?.id = m.id
-//                entity?.title = m.title
-//                entity?.releaseDate = m.releaseDate
-//                entity?.summary = m.summary
-//                entity?.posterImageURL = m.posterImageURL
-//            }
-//        }) { (succeed, _) in
-//            
-//        }
+        MagicalRecord.save({ (ctx) in
+            for m in movies {
+                let entity = MovieManagedObject.mr_createEntity(in: ctx)
+                
+                entity?.id = m.id
+                entity?.title = m.title
+                entity?.releaseDate = m.releaseDate
+                entity?.summary = m.summary
+                entity?.posterImageURL = m.posterImageURL
+            }
+        })
     }
     
     init() {
-//        MagicalRecord.setupCoreDataStack()
+        MagicalRecord.setupCoreDataStack()
     }
     
     func listMovies(listType: MovieListType,
                     page: Int,
-                    completionHandler: ([Movie], String?) -> Void) {
-
+                    completionHandler: @ escaping ([Movie], String?) -> Void) {
+        guard let moviesFromDB = MovieManagedObject.mr_findAll() else {
+            completionHandler([], "something went wrong")
+            return
+        }
+        
+        if moviesFromDB.count == 0 {
+            completionHandler([], "Sorry Empty DB")
+        } else {
+            completionHandler(moviesFromDB as! [Movie], nil)
+        }
     }
 }
 

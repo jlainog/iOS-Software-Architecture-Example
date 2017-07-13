@@ -18,5 +18,5 @@ typealias MovieListHandler = (_ movies: [Movie], _ errorMessage: String?) -> Voi
 protocol ListMovies {
     func listMovies(listType: MovieListType,
                     page: Int,
-                    completionHandler: MovieListHandler)
+                    completionHandler: @escaping MovieListHandler)
 }

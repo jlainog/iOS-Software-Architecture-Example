@@ -43,7 +43,7 @@ struct MockListMoviesImpl : ListMovies {
     
     func listMovies(listType: MovieListType,
                     page: Int,
-                    completionHandler: MovieListHandler) {
+                    completionHandler: @escaping MovieListHandler) {
         if !testSucces {
             completionHandler([Movie](), "Error, try again later")
             return

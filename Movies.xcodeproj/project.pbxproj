@@ -209,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				F501DDE71F17DF8F007B6DAB /* Entity */,
+				F5FB7E3F1F083DD10095095A /* Movies.xcdatamodeld */,
 				F501DDDA1F17D2CC007B6DAB /* ListMovieDataBase.swift */,
 			);
 			name = CoreData;
@@ -303,7 +304,6 @@
 				F5FB7E421F083DD10095095A /* Assets.xcassets */,
 				F5FB7E441F083DD10095095A /* LaunchScreen.storyboard */,
 				F5FB7E471F083DD10095095A /* Info.plist */,
-				F5FB7E3F1F083DD10095095A /* Movies.xcdatamodeld */,
 			);
 			path = Movies;
 			sourceTree = "<group>";

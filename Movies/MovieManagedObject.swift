@@ -9,13 +9,17 @@
 import Foundation
 import CoreData
 
-class MovieManagedObject : NSManagedObject, Movie {
-    @NSManaged var id: String
-    @NSManaged var title: String
-    @NSManaged var releaseDate: Date
-    @NSManaged var summary: String
+public class MovieManagedObject : NSManagedObject, Movie {
+    @NSManaged public var id: String
+    @NSManaged public var title: String
+    @NSManaged public var releaseDate: Date
+    @NSManaged public var summary: String
+    @NSManaged public var urlString : String
     let gendres: [Gendre] = []
-    @NSManaged var posterImageURL: URL
+    var posterImageURL: URL {
+        get { return URL(string: urlString)! }
+        set { urlString = newValue.absoluteString }
+    }
     
     convenience init(id: String,
                      title: String,
