@@ -15,7 +15,7 @@ class MVPListMoviesViewController: ListMoviesTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ListMoviesPresenter(view: self as ListMoviesView,
-                                        service: MockListMoviesImpl())
+                                        service: ListMoviesFactory.listMovies())
         presenter.listMovies()
     }
 }

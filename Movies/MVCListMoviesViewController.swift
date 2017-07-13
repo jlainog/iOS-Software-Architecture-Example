@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MVCListMoviesViewController: ListMoviesTableViewController {
-    fileprivate let controller = ListMoviesController(service: MockListMoviesImpl())
+    fileprivate let controller = ListMoviesController(service: ListMoviesFactory.listMovies())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ extension MVCListMoviesViewController {
         
         cell.titleLabel?.text = "MVC: " + movie.title
         cell.gendreLabel.text = movie.gendres.reduce("") { $0.0 + $0.1.name }
+        cell.posterImageView.af_setImage(withURL: movie.posterImageURL)
         return cell
     }
 }

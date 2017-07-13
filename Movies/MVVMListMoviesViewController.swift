@@ -9,7 +9,7 @@
 import UIKit
 
 class MVVMListMoviesViewController: ListMoviesTableViewController {
-    fileprivate let viewModel = ListMoviesViewModel(service: MockListMoviesImpl())
+    fileprivate let viewModel = ListMoviesViewModel(service: ListMoviesFactory.listMovies())
     fileprivate var activityIndicator : UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     
     override func viewDidLoad() {
