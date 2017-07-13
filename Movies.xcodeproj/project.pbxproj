@@ -17,6 +17,12 @@
 		F501DDD11F16CFE5007B6DAB /* MVCListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDD01F16CFE5007B6DAB /* MVCListMoviesViewController.swift */; };
 		F501DDD31F16D7E8007B6DAB /* ListMoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDD21F16D7E8007B6DAB /* ListMoviesController.swift */; };
 		F501DDD61F16D965007B6DAB /* MockListMoviesControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDD51F16D965007B6DAB /* MockListMoviesControllerDelegate.swift */; };
+		F501DDD91F17D2B4007B6DAB /* ListMoviesWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDD81F17D2B4007B6DAB /* ListMoviesWebService.swift */; };
+		F501DDDB1F17D2CC007B6DAB /* ListMovieDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDDA1F17D2CC007B6DAB /* ListMovieDataBase.swift */; };
+		F501DDDE1F17D4F8007B6DAB /* MoviesResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDDD1F17D4F8007B6DAB /* MoviesResponseData.swift */; };
+		F501DDE01F17D501007B6DAB /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDDF1F17D501007B6DAB /* MovieData.swift */; };
+		F501DDE21F17D730007B6DAB /* MovieWebServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDE11F17D730007B6DAB /* MovieWebServiceResponse.swift */; };
+		F501DDE61F17DF8B007B6DAB /* MovieManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501DDE51F17DF8B007B6DAB /* MovieManagedObject.swift */; };
 		F505F6131F1026F900DCBBD1 /* MovieListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6121F1026F900DCBBD1 /* MovieListTest.swift */; };
 		F505F6171F10336D00DCBBD1 /* MockListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6161F10336D00DCBBD1 /* MockListMovies.swift */; };
 		F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */; };
@@ -70,6 +76,12 @@
 		F501DDD01F16CFE5007B6DAB /* MVCListMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCListMoviesViewController.swift; sourceTree = "<group>"; };
 		F501DDD21F16D7E8007B6DAB /* ListMoviesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesController.swift; sourceTree = "<group>"; };
 		F501DDD51F16D965007B6DAB /* MockListMoviesControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMoviesControllerDelegate.swift; sourceTree = "<group>"; };
+		F501DDD81F17D2B4007B6DAB /* ListMoviesWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesWebService.swift; sourceTree = "<group>"; };
+		F501DDDA1F17D2CC007B6DAB /* ListMovieDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieDataBase.swift; sourceTree = "<group>"; };
+		F501DDDD1F17D4F8007B6DAB /* MoviesResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesResponseData.swift; sourceTree = "<group>"; };
+		F501DDDF1F17D501007B6DAB /* MovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		F501DDE11F17D730007B6DAB /* MovieWebServiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieWebServiceResponse.swift; sourceTree = "<group>"; };
+		F501DDE51F17DF8B007B6DAB /* MovieManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManagedObject.swift; sourceTree = "<group>"; };
 		F505F6121F1026F900DCBBD1 /* MovieListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTest.swift; sourceTree = "<group>"; };
 		F505F6161F10336D00DCBBD1 /* MockListMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListMovies.swift; sourceTree = "<group>"; };
 		F505F6191F10386800DCBBD1 /* ListMoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +176,52 @@
 			name = Mocks;
 			sourceTree = "<group>";
 		};
+		F501DDD71F17D29C007B6DAB /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				F505F6151F10334100DCBBD1 /* Mocks */,
+				F501DDDC1F17D4E5007B6DAB /* WebService */,
+				F501DDE41F17D90B007B6DAB /* CoreData */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		F501DDDC1F17D4E5007B6DAB /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				F501DDE31F17D79B007B6DAB /* Responses */,
+				F501DDD81F17D2B4007B6DAB /* ListMoviesWebService.swift */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		F501DDE31F17D79B007B6DAB /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				F501DDDF1F17D501007B6DAB /* MovieData.swift */,
+				F501DDDD1F17D4F8007B6DAB /* MoviesResponseData.swift */,
+				F501DDE11F17D730007B6DAB /* MovieWebServiceResponse.swift */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		F501DDE41F17D90B007B6DAB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F501DDE71F17DF8F007B6DAB /* Entity */,
+				F501DDDA1F17D2CC007B6DAB /* ListMovieDataBase.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		F501DDE71F17DF8F007B6DAB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F501DDE51F17DF8B007B6DAB /* MovieManagedObject.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		F505F6151F10334100DCBBD1 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +233,7 @@
 		F505F61B1F1038E200DCBBD1 /* ListMovies */ = {
 			isa = PBXGroup;
 			children = (
-				F505F6151F10334100DCBBD1 /* Mocks */,
+				F501DDD71F17D29C007B6DAB /* Adapters */,
 				F5FB7E6F1F085A9F0095095A /* Movie.swift */,
 				F5FB7E731F085DFB0095095A /* ListMovies.swift */,
 			);
@@ -598,13 +656,19 @@
 				F501DDC81F16658D007B6DAB /* MockListMovieView.swift in Sources */,
 				F501DDCD1F16724D007B6DAB /* MVVMListMoviesViewController.swift in Sources */,
 				F5FB7E6B1F0841300095095A /* Gendre.swift in Sources */,
+				F501DDD91F17D2B4007B6DAB /* ListMoviesWebService.swift in Sources */,
+				F501DDDB1F17D2CC007B6DAB /* ListMovieDataBase.swift in Sources */,
+				F501DDE21F17D730007B6DAB /* MovieWebServiceResponse.swift in Sources */,
+				F501DDE01F17D501007B6DAB /* MovieData.swift in Sources */,
 				F5FB7E3B1F083DD10095095A /* ViewController.swift in Sources */,
+				F501DDE61F17DF8B007B6DAB /* MovieManagedObject.swift in Sources */,
 				F5FB7E411F083DD10095095A /* Movies.xcdatamodeld in Sources */,
 				F5FB7E391F083DD10095095A /* AppDelegate.swift in Sources */,
 				F5FB7E701F085A9F0095095A /* Movie.swift in Sources */,
 				F505F6171F10336D00DCBBD1 /* MockListMovies.swift in Sources */,
 				F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */,
 				F501DDCF1F16865F007B6DAB /* MovieCellViewModel.swift in Sources */,
+				F501DDDE1F17D4F8007B6DAB /* MoviesResponseData.swift in Sources */,
 				F505F6221F103B2700DCBBD1 /* ListMoviesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
