@@ -6,10 +6,15 @@ target 'Movies' do
   use_frameworks!
 
   # Pods for Movies
+  pod 'MagicalRecord'
+  pod 'Alamofire', '~> 4.0'
+  pod 'AlamofireImage', '~> 3.1'
 
   target 'MoviesTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'OHHTTPStubs'
+    pod 'OHHTTPStubs/Swift'
   end
 
   target 'MoviesUITests' do
