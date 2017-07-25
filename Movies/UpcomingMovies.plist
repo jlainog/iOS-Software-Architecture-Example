@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>movies</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>324852</string>
+			<key>title</key>
+			<string>Atómica</string>
+			<key>summary</key>
+			<string>Lorena Broughton es una agente de inteligencia secreta sensual y salvaje a partes iguales, dispuesta a desplegar cualquiera de sus habilidades para sobrevivir en…</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/1ggapfNi6ByTuTQ4nPCls1JSLVl.jpg</string>
+			<key>date</key>
+			<date>2017-07-28T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Suspense</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>324851</string>
+			<key>title</key>
+			<string>La torre oscura</string>
+			<key>summary</key>
+			<string>La historia gira en torno a Roland Deschain, último miembro de una orden de caballería denominada Pistoleros. El protagonista ha iniciado la búsqueda de un edificio…</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/u2Mw9iR1sWEq3x2HPT40G4MHDRQ.jpg</string>
+			<key>date</key>
+			<date>2017-07-29T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Sci Fi</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Western</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>324853</string>
+			<key>title</key>
+			<string>Savage Dog</string>
+			<key>summary</key>
+			<string>Una historia ambientada en Indochina en 1959, una tierra más allá de la regla y un tiempo sin piedad, y el nacimiento de una leyenda.</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/yY2MV8dYotYtLYMiTcMvdxpNX5I.jpg</string>
+			<key>date</key>
+			<date>2017-07-30T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Action</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>324856</string>
+			<key>title</key>
+			<string>Kidnap</string>
+			<key>summary</key>
+			<string>Cuenta la historia de una madre (Berry) que hace lo imposible por rescatar a su hija, que ha sido secuestrada en un centro comercial.</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/9CabD3j9PrjRY054fL0WJuEcXHZ.jpg</string>
+			<key>date</key>
+			<date>2017-07-28T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Drama</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Suspense</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

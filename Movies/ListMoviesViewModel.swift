@@ -29,7 +29,7 @@ final class ListMoviesViewModel {
     
     init(service: ListMovies) {
         self.service = service
-        self.listType = .inTheathersNow
+        self.listType = .upcoming
     }
     
     func listMovies() {

@@ -35,6 +35,10 @@
 		F505F6201F1039CB00DCBBD1 /* MVPListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F61F1F1039CB00DCBBD1 /* MVPListMoviesViewController.swift */; };
 		F505F6221F103B2700DCBBD1 /* ListMoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6211F103B2700DCBBD1 /* ListMoviesPresenter.swift */; };
 		F505F6241F1044D500DCBBD1 /* ListMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505F6231F1044D500DCBBD1 /* ListMoviesTableViewCell.swift */; };
+		F5764EA61F27FC5C003275F5 /* ListMoviesFromPList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5764EA41F27FB39003275F5 /* ListMoviesFromPList.swift */; };
+		F5764EA71F27FC5E003275F5 /* UpcomingMovies.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5764EA31F27FB16003275F5 /* UpcomingMovies.plist */; };
+		F5764EA81F27FC61003275F5 /* InTheathers.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5764EA51F27FB71003275F5 /* InTheathers.plist */; };
+		F5D05FFC1F27F5E9002D34CA /* ListMoviesFromPListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D05FFB1F27F5E9002D34CA /* ListMoviesFromPListTest.swift */; };
 		F5FB7E391F083DD10095095A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB7E381F083DD10095095A /* AppDelegate.swift */; };
 		F5FB7E3B1F083DD10095095A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB7E3A1F083DD10095095A /* ViewController.swift */; };
 		F5FB7E3E1F083DD10095095A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB7E3C1F083DD10095095A /* Main.storyboard */; };
@@ -101,6 +105,10 @@
 		F505F6211F103B2700DCBBD1 /* ListMoviesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesPresenter.swift; sourceTree = "<group>"; };
 		F505F6231F1044D500DCBBD1 /* ListMoviesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewCell.swift; sourceTree = "<group>"; };
 		F5612FEF7FF51829D05BA996 /* Pods-MoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesUITests/Pods-MoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5764EA31F27FB16003275F5 /* UpcomingMovies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UpcomingMovies.plist; sourceTree = "<group>"; };
+		F5764EA41F27FB39003275F5 /* ListMoviesFromPList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviesFromPList.swift; sourceTree = "<group>"; };
+		F5764EA51F27FB71003275F5 /* InTheathers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InTheathers.plist; sourceTree = "<group>"; };
+		F5D05FFB1F27F5E9002D34CA /* ListMoviesFromPListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListMoviesFromPListTest.swift; path = ../../../../Desktop/ListMoviesFromPListTest.swift; sourceTree = "<group>"; };
 		F5FB7E351F083DD10095095A /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB7E381F083DD10095095A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB7E3A1F083DD10095095A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +199,7 @@
 		F501DDD71F17D29C007B6DAB /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				F5D05FFD1F27F5F0002D34CA /* PList */,
 				F505F6151F10334100DCBBD1 /* Mocks */,
 				F501DDDC1F17D4E5007B6DAB /* WebService */,
 				F501DDE41F17D90B007B6DAB /* CoreData */,
@@ -239,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				F505F6121F1026F900DCBBD1 /* MovieListTest.swift */,
+				F5D05FFB1F27F5E9002D34CA /* ListMoviesFromPListTest.swift */,
 				F501DDF01F1812B7007B6DAB /* ListMoviesWebServiceTest.swift */,
 				F501DDF31F181432007B6DAB /* ListMovieDataBaseTest.swift */,
 			);
@@ -292,6 +302,16 @@
 				F501DDCC1F16724D007B6DAB /* MVVMListMoviesViewController.swift */,
 			);
 			name = MVVM;
+			sourceTree = "<group>";
+		};
+		F5D05FFD1F27F5F0002D34CA /* PList */ = {
+			isa = PBXGroup;
+			children = (
+				F5764EA41F27FB39003275F5 /* ListMoviesFromPList.swift */,
+				F5764EA31F27FB16003275F5 /* UpcomingMovies.plist */,
+				F5764EA51F27FB71003275F5 /* InTheathers.plist */,
+			);
+			name = PList;
 			sourceTree = "<group>";
 		};
 		F5FB7E2C1F083DD10095095A = {
@@ -507,9 +527,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5764EA81F27FC61003275F5 /* InTheathers.plist in Resources */,
 				F5FB7E461F083DD10095095A /* LaunchScreen.storyboard in Resources */,
 				F5FB7E431F083DD10095095A /* Assets.xcassets in Resources */,
 				F5FB7E3E1F083DD10095095A /* Main.storyboard in Resources */,
+				F5764EA71F27FC5E003275F5 /* UpcomingMovies.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +717,7 @@
 				F505F61A1F10386800DCBBD1 /* ListMoviesTableViewController.swift in Sources */,
 				F501DDCF1F16865F007B6DAB /* MovieCellViewModel.swift in Sources */,
 				F501DDDE1F17D4F8007B6DAB /* MoviesResponseData.swift in Sources */,
+				F5764EA61F27FC5C003275F5 /* ListMoviesFromPList.swift in Sources */,
 				F501DDE91F17EE04007B6DAB /* ListMovieFactory.swift in Sources */,
 				F505F6221F103B2700DCBBD1 /* ListMoviesPresenter.swift in Sources */,
 			);
@@ -705,6 +728,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5FB7E6E1F0843B90095095A /* GendreTest.swift in Sources */,
+				F5D05FFC1F27F5E9002D34CA /* ListMoviesFromPListTest.swift in Sources */,
 				F505F6131F1026F900DCBBD1 /* MovieListTest.swift in Sources */,
 				F5FB7E511F083DD10095095A /* MoviesTests.swift in Sources */,
 				F501DDF11F1812B7007B6DAB /* ListMoviesWebServiceTest.swift in Sources */,

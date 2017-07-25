@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>movies</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>324853</string>
+			<key>title</key>
+			<string>Spider-Man: Homecoming</string>
+			<key>summary</key>
+			<string>Peter (Tom Holland) vuelve a casa emocionado después de su experiencia con los Vengadores en Capitán América: Civil War. Allí vive con su tía May (Marisa Tomei)…</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/bRl6C6FwzTndk0MBGZZ68nRFlw3.jpg</string>
+			<key>date</key>
+			<date>2017-07-28T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Adventure</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>324854</string>
+			<key>title</key>
+			<string>Dunkerque</string>
+			<key>summary</key>
+			<string>II Guerra Mundial. Cientos de miles de británicos y tropas aliadas están rodeados por las fuerzas enemigas. Atrapados en la playa con el mar a sus espaldas se enfrentan…</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/iqkJigezfIzIx5duhN01jK8K5ga.jpg</string>
+			<key>date</key>
+			<date>2017-07-28T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Action</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Drama</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>324855</string>
+			<key>title</key>
+			<string>Baby Driver</string>
+			<key>summary</key>
+			<string>Baby, un joven y talentoso conductor especializado en fugas (Ansel Elgort), depende del ritmo de su banda sonora personal para ser el mejor en lo suyo. Cuando conoce…</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/5FFkWMuLntzxqdpLT12avTxRpPE.jpg</string>
+			<key>date</key>
+			<date>2017-07-28T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Action</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>324856</string>
+			<key>title</key>
+			<string>Cars 3</string>
+			<key>summary</key>
+			<string>Rayo McQueen sigue siendo el mejor coche de carreras del mundo, pero ahora que es uno de los más veteranos del circuito, debe demostrar a todo el mundo que aún puede…</string>
+			<key>posterImageURL</key>
+			<string>https://image.tmdb.org/t/p/w185_and_h278_bestv2/fyy1nDC8wm553FCiBDojkJmKLCs.jpg</string>
+			<key>date</key>
+			<date>2017-07-28T22:00:04Z</date>
+			<key>gendres</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Comedia</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>878</string>
+					<key>name</key>
+					<string>Family</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

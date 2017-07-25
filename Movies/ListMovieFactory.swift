@@ -10,6 +10,6 @@ import Foundation
 
 struct ListMoviesFactory {
     static func listMovies() -> ListMovies {
-        return MockListMoviesImpl()
+        return ListMoviesFromPList()
     }
 }
